@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: 'Chivo Mono', monospace;
     color: #353A34;
+    overflow-x:hidden ;
 }
 
 .container-a {
@@ -77,6 +78,33 @@ nav {
     display: flex;
 }
 .menu-nav li{
-   letter-spacing: 3px;
+   letter-spacing: 4px;
    margin-left: 32px;
+}
+
+.container-b{
+    height: auto;
+    width: 100%;
+    background-color: #d0a47d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card-apresentacao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
