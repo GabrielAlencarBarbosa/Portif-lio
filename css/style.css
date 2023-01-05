@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Chivo Mono', monospace;
-    color: #353A34;
+    color: #000000;
     overflow-x:hidden ;
 }
 
 .container-a {
     height: 100vh;
     width: 100vw;
-    background-color: #F0D0C1;
+    background-color: #8894a2;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -53,11 +53,11 @@ transition: .5s ease-in-out;
 }
 
 a:hover {
-    background-color: #d0a47d;
+    background-color: #FFFF;
 }
 
 a {
-    color: #353A34;
+    color: #000000;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -69,7 +69,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background:#d0a47d ;
+    background: #2e3d50;
     height: 8vh;
 }
 
@@ -82,29 +82,74 @@ nav {
    margin-left: 32px;
 }
 
-.container-b{
+
+.container-b {
+    background: #8894a2;
     height: auto;
     width: 100%;
-    background-color: #d0a47d;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 3rem 0;
+    margin: 0 0;
+    border: #2e3d50 solid 5px;
 }
 
 .card-apresentacao {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     width: 90%;
 }
+
 .card {
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    margin: 3rem 0 0;
+    margin: 3rem 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background-color: #2e3d50;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card-text {
+    font-family: 'Chivo Mono', monospace;
+    width: 70%;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+
+.card-wpp{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-wpp::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wpp:h2 {
+    font-size: 40px;
+    text-transform:uppercase ;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
 }
